@@ -1,0 +1,119 @@
+/* General Body Styling */
+body {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Dark background */
+  color: #f7f7f7; /* Light text */
+  line-height: 1.6;
+}
+
+/* Header Styling (same as the About page) */
+header {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #333;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #c62828; /* Dark red heading */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #222; /* Darker background for nav */
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #fff; /* White text for links */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #c62828; /* Dark red hover effect */
+}
+
+/* Menu Section */
+.menu-section {
+  padding: 40px;
+  background-color: #111; /* Dark section background */
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 60px auto 80px auto; /* Adds 60px space at the top and 80px at the bottom */
+  text-align: left; /* Left align for menu items */
+}
+
+.menu-section h2 {
+  font-size: 36px;
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Menu Column */
+.menu-column {
+  display: block;
+  border-left: 2px solid #fff; /* White vertical line */
+  padding-left: 20px;
+}
+
+/* Menu Item */
+.menu-item {
+  margin-bottom: 30px;
+}
+
+.menu-item h3 {
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+  color: #c62828; /* Dark red item headings */
+  margin-bottom: 5px;
+}
+
+.menu-item p {
+  font-family: 'Georgia', serif;
+  font-size: 16px;
+  color: #f7f7f7; /* Light text for main items */
+  margin: 0;
+}
+
+.menu-item .description {
+  font-size: 14px;
+  color: #aaa; /* Light grey for descriptions */
+  margin-top: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #111; /* Footer background matches section */
+  color: white;
+  padding: 30px;
+  font-size: 14px;
+  margin-top: 20px; /* Adds space above the footer */
+}
+
+.footer-logo {
+  width: 50px;
+  height: auto;
+  display: block;
+  margin: 20px auto 0;
+}
