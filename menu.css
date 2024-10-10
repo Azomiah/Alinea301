@@ -1,5 +1,6 @@
-/* General Body Styling */
-body {
+/* Mahir Azam 
+CIS 301 Final PRoject 1 
+Making a Website for ALinea by Grant Achatz */body {
   font-family: 'Playfair Display', serif;
   margin: 0;
   padding: 0;
@@ -69,12 +70,34 @@ nav ul li a:hover {
   text-align: center;
 }
 
-/* Menu Column */
-.menu-column {
-  display: block;
-  border-left: 2px solid #fff; /* White vertical line */
-  padding-left: 20px;
+/* Grid Container for Menu Items */
+/* Grid Container with White Line */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column by default */
+  grid-gap: 20px;
+  position: relative; /* To position the pseudo-element */
+  padding: 0 20px; /* Adds some padding around the grid */
 }
+
+.grid-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: white; /* White vertical line */
+  transform: translateX(-50%);
+  z-index: 1; /* Ensure it stays above the background but behind the text */
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
+  }
+}
+
 
 /* Menu Item */
 .menu-item {
@@ -116,4 +139,37 @@ footer {
   height: auto;
   display: block;
   margin: 20px auto 0;
+}
+
+a#menuEmail {
+  color: white;
+}
+/* Media Query for Smaller Screens (Mobile) */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Single column for mobile */
+  }
+
+  h1 {
+    font-size: 2rem; /* Smaller font size for mobile */
+  }
+
+  .menu-section {
+    padding: 20px; /* Less padding on smaller screens */
+  }
+}
+
+/* Media Query for Larger Screens (Desktop) */
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
+  }
+
+  h1 {
+    font-size: 3.5rem; /* Larger font size for desktop */
+  }
+
+  .menu-section {
+    padding: 60px; /* More padding on larger screens */
+  }
 }

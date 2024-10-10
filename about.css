@@ -1,10 +1,12 @@
-
+/* Mahir Azam 
+CIS 301 Final PRoject 1 
+Making a Website for ALinea by Grant Achatz */
 body {
     font-family: 'Playfair Display', serif;
     margin: 0;
     padding: 0;
-    background-color: #000; /* Set background to black */
-    color: #f7f7f7; /* Light grey text for readability */
+    background-color: #000; 
+    color: #f7f7f7;
     line-height: 1.6;
 }
 
@@ -65,39 +67,39 @@ section {
 
 /* About the Chef Section */
 .about-the-chef {
-    text-align: center; /* Center the content within the section */
+    text-align: center; 
     margin-bottom: 40px;
 }
 
 /* Floated image with centered positioning */
 .chef-image {
-    float: none; /* Reset any previous float rules */
-    margin: 0 auto; /* Center the image horizontally */
-    width: 300px; /* Set width to control image size */
+    float: none; 
+    margin: 0 auto; 
+    width: 300px; 
 }
 
 .chef-image img {
-    width: 100%; /* The image takes full width of its container */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: auto; 
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Same shadow as carousel images */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .chef-image img:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 16px 24px rgba(255, 255, 255, 0.2); /* Hover effect matches carousel images */
+    box-shadow: 0px 16px 24px rgba(255, 255, 255, 0.2); /
 }
 
 /* Blurb Text Styling */
 .chef-blurb {
     max-width: 600px;
-    margin: 20px auto 0; /* Center the blurb beneath the image */
+    margin: 20px auto 0; 
     font-family: 'Georgia', serif;
     font-size: 18px;
     color: #ccc;
     line-height: 1.8;
-    text-align: justify; /* Neat, justified text alignment */
+    text-align: justify; 
 }
 
 /* H2 Heading Styling */
@@ -171,3 +173,38 @@ footer {
     display: block;
     margin: 20px auto 0;
 }
+/* Chef Figure Styling */
+.chef-figure {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .chef-figure img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); 
+  }
+  
+  .chef-figure figcaption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ccc;
+    font-style: italic;
+  }
+  /* Media Query for Smaller Screens (Mobile) */
+@media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr; 
+    }
+  
+    h1 {
+      font-size: 2rem; 
+    }
+  
+    .menu-section {
+      padding: 20px; 
+    }
+  }
+  
+  
